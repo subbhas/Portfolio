@@ -52,8 +52,8 @@ export default function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`transition-colors hover:text-green-500 ${
-                  isScrolled ? "text-gray-700" : "text-gray-200"
+                className={`transition-colors ${
+                  isScrolled ? "text-gray-700 hover:text-[#0f2e35]" : "text-gray-200 hover:text-[#0f2e35]"
                 }`}
               >
                 {item.label}
@@ -86,7 +86,7 @@ export default function Navigation() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-green-500 hover:bg-gray-50 rounded-md transition-colors"
+                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50 rounded-md transition-colors"
                 >
                   {item.label}
                 </button>

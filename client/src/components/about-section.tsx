@@ -15,7 +15,7 @@ export default function AboutSection() {
             Throughout my career, I've been driven by the belief that financial freedom should be accessible to everyone, not just the privileged few. While many advisors focus on short-term gains, I concentrate on building sustainable wealth that endures across generations. Every strategy I develop serves a deeper purpose, turning aspirations into achievements.
           </p>
           
-          <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 border-green-500 my-8">
+          <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 my-8" style={{ borderLeftColor: '#0f2e35' }}>
             <p className="text-lg font-medium text-gray-900 italic">
               "This philosophy shaped everything I built."
             </p>
@@ -29,7 +29,7 @@ export default function AboutSection() {
             My entrepreneurial vision extends beyond traditional finance. When I saw gaps in compassionate care for Canadians, I created home care services that prioritize dignity and excellence. Through Vanquity Investments, I lead strategic acquisitions focused on creating meaningful value for all stakeholders involved.
           </p>
           
-          <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 border-green-500 my-8">
+          <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 my-8" style={{ borderLeftColor: '#0f2e35' }}>
             <p className="text-lg font-medium text-gray-900 italic">
               "Each venture reflects the same core belief: business should be a powerful force for good."
             </p>

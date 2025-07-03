@@ -120,7 +120,8 @@ END:VCARD`;
                           <FormControl>
                             <Input 
                               placeholder="Your full name"
-                              className="bg-gray-100 border-0 focus:bg-white focus:ring-2 focus:ring-green-500"
+                              className="bg-gray-100 border-0 focus:bg-white focus:ring-2"
+                              style={{ '--tw-ring-color': '#0f2e35' } as any}
                               {...field} 
                             />
                           </FormControl>
@@ -138,7 +139,8 @@ END:VCARD`;
                             <Input 
                               type="email"
                               placeholder="your@email.com"
-                              className="bg-gray-100 border-0 focus:bg-white focus:ring-2 focus:ring-green-500"
+                              className="bg-gray-100 border-0 focus:bg-white focus:ring-2"
+                              style={{ '--tw-ring-color': '#0f2e35' } as any}
                               {...field} 
                             />
                           </FormControl>
@@ -159,7 +161,8 @@ END:VCARD`;
                             <Input 
                               type="tel"
                               placeholder="(604) 555-0123"
-                              className="bg-gray-100 border-0 focus:bg-white focus:ring-2 focus:ring-green-500"
+                              className="bg-gray-100 border-0 focus:bg-white focus:ring-2"
+                              style={{ '--tw-ring-color': '#0f2e35' } as any}
                               {...field} 
                             />
                           </FormControl>
@@ -176,7 +179,8 @@ END:VCARD`;
                           <FormControl>
                             <Input 
                               placeholder="Vancouver"
-                              className="bg-gray-100 border-0 focus:bg-white focus:ring-2 focus:ring-green-500"
+                              className="bg-gray-100 border-0 focus:bg-white focus:ring-2"
+                              style={{ '--tw-ring-color': '#0f2e35' } as any}
                               {...field} 
                             />
                           </FormControl>
@@ -196,7 +200,8 @@ END:VCARD`;
                           <Textarea 
                             rows={4}
                             placeholder="Tell me about your financial goals..."
-                            className="bg-gray-100 border-0 focus:bg-white focus:ring-2 focus:ring-green-500 resize-none"
+                            className="bg-gray-100 border-0 focus:bg-white focus:ring-2 resize-none"
+                            style={{ '--tw-ring-color': '#0f2e35' } as any}
                             {...field} 
                           />
                         </FormControl>
@@ -224,7 +229,7 @@ END:VCARD`;
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <MapPin className="text-green-500 mt-1 mr-3 w-5 h-5" />
+                    <MapPin className="mt-1 mr-3 w-5 h-5" style={{ color: '#0f2e35' }} />
                     <div>
                       <p className="text-gray-900 font-medium">Address</p>
                       <p className="text-gray-600">
@@ -234,14 +239,14 @@ END:VCARD`;
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <Phone className="text-green-500 mr-3 w-5 h-5" />
+                    <Phone className="mr-3 w-5 h-5" style={{ color: '#0f2e35' }} />
                     <div>
                       <p className="text-gray-900 font-medium">Phone</p>
                       <p className="text-gray-600">+1 (604) 555-0123</p>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <Mail className="text-green-500 mr-3 w-5 h-5" />
+                    <Mail className="mr-3 w-5 h-5" style={{ color: '#0f2e35' }} />
                     <div>
                       <p className="text-gray-900 font-medium">Email</p>
                       <p className="text-gray-600">jayan@jayanjayabal.com</p>

@@ -45,19 +45,20 @@ export default function VenturesCarousel() {
           >
             {ventures.map((venture, index) => (
               <div key={index} className="w-full flex-shrink-0 px-4">
-                <div className="max-w-4xl mx-auto">
-                  <Card className="bg-white shadow-lg border border-gray-200">
-                    <CardContent className="p-8">
+                <div className="max-w-md mx-auto">
+                  <Card className="bg-white shadow-lg border border-gray-200 aspect-square">
+                    <CardContent className="p-8 h-full flex flex-col justify-center">
                       <div className="text-center">
-                        <h3 className="text-2xl font-bold mb-4 text-gray-900">{venture.title}</h3>
-                        <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+                        <h3 className="text-xl font-bold mb-4 text-gray-900">{venture.title}</h3>
+                        <p className="text-gray-600 mb-6 leading-relaxed text-sm">
                           {venture.description}
                         </p>
                         <a
                           href={venture.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium transition-colors"
+                          className="inline-flex items-center gap-2 font-medium transition-colors"
+                          style={{ color: '#0f2e35' }}
                         >
                           Visit Website
                           <ExternalLink className="w-4 h-4" />
@@ -77,7 +78,7 @@ export default function VenturesCarousel() {
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentSlide ? "bg-green-500" : "bg-gray-300"
+                  index === currentSlide ? "bg-[#0f2e35]" : "bg-gray-300"
                 }`}
               />
             ))}

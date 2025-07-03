@@ -13,7 +13,7 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(158, 64%, 52%);
+  --primary: hsl(190, 55%, 14%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(60, 4.8%, 95.9%);
   --secondary-foreground: hsl(24, 9.8%, 10%);
@@ -28,8 +28,8 @@
   --hero-bg: hsl(210, 20%, 12%);
   --hero-overlay: hsl(0, 0%, 0%);
   --text-light: hsl(0, 0%, 88%);
-  --green-accent: hsl(158, 64%, 52%);
-  --green-hover: hsl(158, 64%, 45%);
+  --green-accent: hsl(190, 55%, 14%);
+  --green-hover: hsl(190, 55%, 12%);
   --footer-bg: hsl(210, 25%, 8%);
 }
 
@@ -44,7 +44,7 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(158, 64%, 52%);
+  --primary: hsl(190, 55%, 14%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(240, 3.7%, 15.9%);
   --secondary-foreground: hsl(0, 0%, 98%);
@@ -83,7 +83,8 @@
   }
 
   .btn-primary {
-    @apply bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    background-color: #0f2e35;
+    @apply hover:bg-opacity-80 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
   }
 
   .animate-float {
