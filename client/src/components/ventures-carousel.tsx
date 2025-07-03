@@ -39,10 +39,10 @@ export default function VenturesCarousel() {
   }, []);
 
   return (
-    <section id="ventures" className="py-20 relative" style={{ backgroundColor: '#D3D3D3' }}>
+    <section id="ventures" className="py-20 relative" style={{ backgroundColor: '#1a3d47' }}>
       {/* Professional Digital Grid Background */}
       <div 
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0"
         style={{
           backgroundImage: `url(${digitalGridBg})`,
           backgroundSize: 'cover',
@@ -52,11 +52,11 @@ export default function VenturesCarousel() {
       ></div>
       
       {/* Light overlay to maintain readability */}
-      <div className="absolute inset-0 bg-white/60"></div>
+      <div className="absolute inset-0 bg-black/20"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-light text-gray-900 mb-6">Ventures</h2>
+          <h2 className="text-4xl sm:text-5xl font-light text-white mb-6">Ventures</h2>
         </div>
         
         <div className="relative overflow-hidden">
@@ -71,18 +71,17 @@ export default function VenturesCarousel() {
                     <CardContent className="p-8 h-full flex flex-col justify-center">
                       <div className="text-center">
                         {/* Company Logo */}
-                        <div className="mb-6 flex justify-center">
+                        <div className="mb-8 flex justify-center">
                           <img 
                             src={venture.logo} 
                             alt={`${venture.title} logo`}
-                            className={`h-16 w-auto max-w-[200px] object-contain ${
+                            className={`h-20 w-auto max-w-[240px] object-contain ${
                               venture.title === "Pier7 Mortgages" ? "filter brightness-0" : ""
                             } ${
                               venture.title === "WealthX Financial Solutions" ? "object-right" : ""
                             }`}
                           />
                         </div>
-                        <h3 className="text-xl font-bold mb-4 text-gray-900">{venture.title}</h3>
                         <p className="text-gray-600 mb-6 leading-relaxed text-sm">
                           {venture.description}
                         </p>
