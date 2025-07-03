@@ -1,8 +1,9 @@
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { insertContactSchema } from '../shared/schema';
 import { storage } from './_lib/storage';
 import { z } from 'zod';
 
-export default async function handler(req, res) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
     return;
