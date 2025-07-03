@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
 import wealthxLogo from "@assets/Screenshot 2025-07-02 at 17.46.02_1751503635779.png";
 import pier7Logo from "@assets/Pier7-Mortgage-Architect_1751503635779.png";
-import jlFamilyLogo from "@assets/jlfamily-logo_1751503635778.jpeg";
+import jlFamilyLogo from "@assets/jlfamily-logo_1751503635778.svg";
 import digitalGridBg from "@assets/gradient-navy-blue-digital-grid-wallpaper_1751503999120.jpg";
 
 const ventures = [
