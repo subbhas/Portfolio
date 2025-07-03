@@ -4,24 +4,15 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-12 mb-16">
+          <div className="md:col-span-5">
             <h3 className="text-2xl font-bold mb-6">Jayan Jayabal</h3>
             <p className="text-gray-300 leading-relaxed">
               Building legacies that change the world through strategic wealth management and innovative venture partnerships.
             </p>
           </div>
           
-          <div>
-            <h4 className="text-lg font-semibold mb-4">About</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li><a href="#about" className="hover:text-[#0f2e35] transition-colors">Philosophy</a></li>
-              <li><a href="#about" className="hover:text-[#0f2e35] transition-colors">Experience</a></li>
-              <li><a href="#about" className="hover:text-[#0f2e35] transition-colors">Leadership</a></li>
-            </ul>
-          </div>
-          
-          <div>
+          <div className="md:col-span-3">
             <h4 className="text-lg font-semibold mb-4">Ventures</h4>
             <ul className="space-y-2 text-gray-300">
               <li><a href="https://www.wealthxfinancial.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0f2e35] transition-colors">WealthX Financial Solutions</a></li>
@@ -30,7 +21,7 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div>
+          <div className="md:col-span-4">
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4 mb-4">
               <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
@@ -51,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © 2025 Jayan Jayabal. All rights reserved.
           </p>

@@ -23,11 +23,11 @@ export default function AboutSection() {
             Throughout my career, I've been driven by the belief that financial freedom should be accessible to everyone, not just the privileged few. While many advisors focus on short-term gains, I concentrate on building sustainable wealth that endures across generations.
           </p>
           
-          <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 my-8" style={{ borderLeftColor: '#0f2e35' }}>
-            <p className="text-lg font-medium text-gray-900 italic">
-              "This philosophy shaped everything I built."
+          <blockquote className="my-12 p-8 rounded-lg bg-white shadow-sm !border-l-4 !border-[#103137]">
+            <p className="text-xl italic leading-relaxed text-gray-800 not-italic">
+              I concentrate on building sustainable wealth that endures across generations. This philosophy shaped everything I built.
             </p>
-          </div>
+          </blockquote>
           
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             I founded WealthX Financial Solutions with a clear mission: to revolutionize wealth management through integrity, innovation, and genuine client partnership. As Chief Strategy Officer at Westgroup Financial Management, I help clients navigate financial complexity to achieve their goals with clarity and confidence.
@@ -37,11 +37,11 @@ export default function AboutSection() {
             My entrepreneurial vision extends beyond traditional finance. When I saw gaps in compassionate care for Canadians, I created home care services that prioritize dignity and excellence. Through Vanquity Investments, I lead strategic acquisitions focused on creating meaningful value for all stakeholders involved.
           </p>
           
-          <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 my-8" style={{ borderLeftColor: '#0f2e35' }}>
-            <p className="text-lg font-medium text-gray-900 italic">
-              "Each venture reflects the same core belief: business should be a powerful force for good."
+          <blockquote className="my-12 p-8 rounded-lg bg-white shadow-sm !border-l-4 !border-[#103137]">
+            <p className="text-xl italic leading-relaxed text-gray-800 not-italic">
+              Each venture reflects the same core belief: business should be a powerful force for good.
             </p>
-          </div>
+          </blockquote>
           
           <p className="text-lg text-gray-700 leading-relaxed">
             Every relationship I build, every strategy I craft, and every decision I make centers on one fundamental truth: that wealth creation and positive impact aren't separate objectives. When aligned properly, they become the foundation for something truly meaningful.
