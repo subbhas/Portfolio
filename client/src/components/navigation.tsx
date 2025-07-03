@@ -73,7 +73,9 @@ END:VCARD`;
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`transition-colors ${
-                  isScrolled ? "text-gray-700 hover:text-[#0f2e35]" : "text-gray-200 hover:text-[#0f2e35]"
+                  isScrolled
+                    ? "text-gray-700 hover:text-[#0f2e35]"
+                    : "text-gray-200 hover:text-white"
                 }`}
               >
                 {item.label}
@@ -84,7 +86,9 @@ END:VCARD`;
             <a
               href="tel:+16047047972"
               className={`flex items-center gap-2 transition-colors ${
-                isScrolled ? "text-gray-700 hover:text-[#0f2e35]" : "text-gray-200 hover:text-[#0f2e35]"
+                isScrolled
+                  ? "text-gray-700 hover:text-[#0f2e35]"
+                  : "text-gray-200 hover:text-white"
               }`}
             >
               <Phone size={16} />
@@ -115,7 +119,11 @@ END:VCARD`;
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50 rounded-md transition-colors"
+                  className={`block w-full text-left px-3 py-2 transition-colors rounded-md ${
+                    isScrolled
+                      ? "text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50"
+                      : "text-gray-700 hover:text-white hover:bg-gray-800"
+                  }`}
                 >
                   {item.label}
                 </button>
@@ -124,7 +132,11 @@ END:VCARD`;
               {/* Mobile Contact Actions */}
               <a
                 href="tel:+16047047972"
-                className="flex items-center gap-2 w-full px-3 py-2 text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50 rounded-md transition-colors"
+                className={`flex items-center gap-2 w-full px-3 py-2 transition-colors rounded-md ${
+                  isScrolled
+                    ? "text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50"
+                    : "text-gray-700 hover:text-white hover:bg-gray-800"
+                }`}
               >
                 <Phone size={16} />
                 <span>(604) 704-7972</span>
@@ -132,7 +144,11 @@ END:VCARD`;
               
               <button
                 onClick={downloadVCard}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50 rounded-md transition-colors"
+                className={`block w-full text-left px-3 py-2 transition-colors rounded-md ${
+                  isScrolled
+                    ? "text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50"
+                    : "text-gray-700 hover:text-white hover:bg-gray-800"
+                }`}
               >
                 Download Contact Card
               </button>
