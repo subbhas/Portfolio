@@ -1,4 +1,4 @@
-import { users, contacts, type User, type InsertUser, type Contact, type InsertContact } from "@shared/schema";
+import { users, contacts, type User, type InsertUser, type Contact, type InsertContact } from "../../shared/schema";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -56,4 +56,4 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new MemStorage(); 
