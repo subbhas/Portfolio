@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import wealthxLogo from "@assets/Screenshot 2025-07-02 at 17.46.02_1751503635779.png";
 import pier7Logo from "@assets/Pier7-Mortgage-Architect_1751503635779.png";
 import jlFamilyLogo from "@assets/jlfamily-logo_1751503635778.jpeg";
+import digitalGridBg from "@assets/gradient-navy-blue-digital-grid-wallpaper_1751503999120.jpg";
 
 const ventures = [
   {
@@ -39,17 +40,19 @@ export default function VenturesCarousel() {
 
   return (
     <section id="ventures" className="py-20 relative" style={{ backgroundColor: '#D3D3D3' }}>
-      {/* Professional Financial Background */}
+      {/* Professional Digital Grid Background */}
       <div 
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-30"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='financial-grid' x='0' y='0' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 20 0 L 0 0 0 20' fill='none' stroke='%230f2e35' stroke-width='0.5' opacity='0.3'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23financial-grid)'/%3E%3Cg fill='%230f2e35' opacity='0.15'%3E%3Ccircle cx='25' cy='25' r='2'/%3E%3Ccircle cx='75' cy='25' r='2'/%3E%3Ccircle cx='25' cy='75' r='2'/%3E%3Ccircle cx='75' cy='75' r='2'/%3E%3Cpath d='M10 50 Q 30 30 50 50 T 90 50' stroke='%230f2e35' stroke-width='1' fill='none' opacity='0.4'/%3E%3Cpath d='M15 60 L 25 45 L 35 55 L 45 40 L 55 50 L 65 35 L 75 45 L 85 30' stroke='%230f2e35' stroke-width='1.5' fill='none' opacity='0.3'/%3E%3C/g%3E%3C/svg%3E")`,
-          backgroundRepeat: 'repeat'
+          backgroundImage: `url(${digitalGridBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
         }}
       ></div>
       
-      {/* Subtle overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-30"></div>
+      {/* Light overlay to maintain readability */}
+      <div className="absolute inset-0 bg-white/60"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
