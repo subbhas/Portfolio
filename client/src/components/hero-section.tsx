@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroImage from "@assets/gettyimages-1956949830-2048x2048_1751502849477.jpg";
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -19,15 +20,12 @@ export default function HeroSection() {
       id="home" 
       className="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden"
     >
-      {/* Background with dark gradient */}
-      <div className="absolute inset-0 hero-gradient"></div>
-      <div className="absolute inset-0 bg-black/40"></div>
-      
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-gradient-to-br from-green-400 to-blue-500 blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full bg-gradient-to-br from-purple-400 to-green-500 blur-3xl animate-float" style={{ animationDelay: "3s" }}></div>
-      </div>
+      {/* HD Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      ></div>
+      <div className="absolute inset-0 bg-black/50"></div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light mb-6 tracking-tight animate-fade-in">
