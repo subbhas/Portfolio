@@ -13,21 +13,20 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-semibold mb-4">About</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-[#0f2e35] transition-colors">Wealth Management</a></li>
-              <li><a href="#" className="hover:text-[#0f2e35] transition-colors">Investment Strategy</a></li>
-              <li><a href="#" className="hover:text-[#0f2e35] transition-colors">Financial Planning</a></li>
-              <li><a href="#" className="hover:text-[#0f2e35] transition-colors">Venture Capital</a></li>
+              <li><a href="#about" className="hover:text-[#0f2e35] transition-colors">Philosophy</a></li>
+              <li><a href="#about" className="hover:text-[#0f2e35] transition-colors">Experience</a></li>
+              <li><a href="#about" className="hover:text-[#0f2e35] transition-colors">Leadership</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Companies</h4>
+            <h4 className="text-lg font-semibold mb-4">Ventures</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-[#0f2e35] transition-colors">WealthX Financial Solutions</a></li>
-              <li><a href="#" className="hover:text-[#0f2e35] transition-colors">Westgroup Financial Management</a></li>
-              <li><a href="#" className="hover:text-[#0f2e35] transition-colors">Vanquity Investments</a></li>
+              <li><a href="https://www.wealthxfinancial.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0f2e35] transition-colors">WealthX Financial Solutions</a></li>
+              <li><a href="https://pier7mortgages.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0f2e35] transition-colors">Pier7 Mortgages</a></li>
+              <li><a href="https://justlikefamily.ca/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0f2e35] transition-colors">Just Like Family</a></li>
             </ul>
           </div>
           
@@ -40,20 +39,21 @@ export default function Footer() {
               <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
+              <a href="mailto:jayan@wealthxfinancial.com" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
             <p className="text-gray-400 text-sm">
               142 Esplanade East<br />
-              North Vancouver, BC V7L 4X9
+              North Vancouver, BC V7L 4X9<br />
+              <a href="tel:+16047047972" className="hover:text-[#0f2e35] transition-colors">(604) 704-7972</a>
             </p>
           </div>
         </div>
         
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2024 Jayan Jayabal. All rights reserved.
+            © 2025 Jayan Jayabal. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-400">
             <a href="#" className="hover:text-[#0f2e35] transition-colors">Privacy Policy</a>

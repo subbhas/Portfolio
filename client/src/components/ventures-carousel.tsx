@@ -39,7 +39,7 @@ export default function VenturesCarousel() {
   }, []);
 
   return (
-    <section id="ventures" className="py-20 relative" style={{ backgroundColor: '#1a3d47' }}>
+    <section id="ventures" className="py-20 relative" style={{ backgroundColor: '#1a2a3a' }}>
       {/* Professional Digital Grid Background */}
       <div 
         className="absolute inset-0"
@@ -52,7 +52,7 @@ export default function VenturesCarousel() {
       ></div>
       
       {/* Light overlay to maintain readability */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/30"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
@@ -71,15 +71,20 @@ export default function VenturesCarousel() {
                     <CardContent className="p-8 h-full flex flex-col justify-center">
                       <div className="text-center">
                         {/* Company Logo */}
-                        <div className="mb-8 flex justify-center">
+                        <div className="mb-8 flex justify-center items-center min-h-[80px]">
                           <img 
                             src={venture.logo} 
                             alt={`${venture.title} logo`}
-                            className={`h-20 w-auto max-w-[240px] object-contain ${
+                            className={`max-h-20 w-auto max-w-[240px] object-contain ${
                               venture.title === "Pier7 Mortgages" ? "filter brightness-0" : ""
                             } ${
                               venture.title === "WealthX Financial Solutions" ? "object-right" : ""
+                            } ${
+                              venture.title === "Just Like Family" ? "rounded-lg" : ""
                             }`}
+                            style={{
+                              maxHeight: venture.title === "Just Like Family" ? "60px" : "80px"
+                            }}
                           />
                         </div>
                         <p className="text-gray-600 mb-6 leading-relaxed text-sm">

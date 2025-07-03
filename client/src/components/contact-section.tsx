@@ -94,7 +94,7 @@ END:VCARD`;
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-light text-gray-900 mb-6">
             Start Your Financial Journey
@@ -242,14 +242,14 @@ END:VCARD`;
                     <Phone className="mr-3 w-5 h-5" style={{ color: '#0f2e35' }} />
                     <div>
                       <p className="text-gray-900 font-medium">Phone</p>
-                      <p className="text-gray-600">+1 (604) 555-0123</p>
+                      <a href="tel:+16047047972" className="text-gray-600 hover:text-[#0f2e35] transition-colors">(604) 704-7972</a>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <Mail className="mr-3 w-5 h-5" style={{ color: '#0f2e35' }} />
                     <div>
                       <p className="text-gray-900 font-medium">Email</p>
-                      <p className="text-gray-600">jayan@jayanjayabal.com</p>
+                      <a href="mailto:jayan@wealthxfinancial.com" className="text-gray-600 hover:text-[#0f2e35] transition-colors">jayan@wealthxfinancial.com</a>
                     </div>
                   </div>
                 </div>

@@ -1,10 +1,18 @@
+import { motion } from "framer-motion";
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
           <h2 className="text-4xl sm:text-5xl font-light text-gray-900 mb-6">About Me</h2>
-        </div>
+        </motion.div>
         
         <div className="prose prose-lg prose-gray max-w-none">
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -12,7 +20,7 @@ export default function AboutSection() {
           </p>
           
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Throughout my career, I've been driven by the belief that financial freedom should be accessible to everyone, not just the privileged few. While many advisors focus on short-term gains, I concentrate on building sustainable wealth that endures across generations. Every strategy I develop serves a deeper purpose, turning aspirations into achievements.
+            Throughout my career, I've been driven by the belief that financial freedom should be accessible to everyone, not just the privileged few. While many advisors focus on short-term gains, I concentrate on building sustainable wealth that endures across generations.
           </p>
           
           <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 my-8" style={{ borderLeftColor: '#0f2e35' }}>

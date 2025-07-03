@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
@@ -28,6 +28,28 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
+  const downloadVCard = () => {
+    const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Jayan Jayabal
+ORG:WealthX Financial Solutions
+TITLE:Wealth Management Expert
+TEL:+16047047972
+EMAIL:jayan@wealthxfinancial.com
+ADR:;;142 Esplanade East;North Vancouver;BC;V7L 4X9;Canada
+URL:https://www.wealthxfinancial.com
+END:VCARD`;
+
+    const blob = new Blob([vCardData], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Jayan_Jayabal.vcf';
+    link.click();
+    URL.revokeObjectURL(url);
+    setIsOpen(false);
+  };
+
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled ? "bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm" : "bg-transparent"
@@ -41,13 +63,11 @@ export default function Navigation() {
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {[
               { label: "Home", id: "home" },
               { label: "About", id: "about" },
               { label: "Ventures", id: "ventures" },
-              { label: "Testimonials", id: "testimonials" },
-              { label: "Contact", id: "contact" },
             ].map((item) => (
               <button
                 key={item.id}
@@ -59,6 +79,17 @@ export default function Navigation() {
                 {item.label}
               </button>
             ))}
+            
+            {/* Phone Number */}
+            <a
+              href="tel:+16047047972"
+              className={`flex items-center gap-2 transition-colors ${
+                isScrolled ? "text-gray-700 hover:text-[#0f2e35]" : "text-gray-200 hover:text-[#0f2e35]"
+              }`}
+            >
+              <Phone size={16} />
+              <span className="font-medium">(604) 704-7972</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,8 +111,6 @@ export default function Navigation() {
                 { label: "Home", id: "home" },
                 { label: "About", id: "about" },
                 { label: "Ventures", id: "ventures" },
-                { label: "Testimonials", id: "testimonials" },
-                { label: "Contact", id: "contact" },
               ].map((item) => (
                 <button
                   key={item.id}
@@ -91,6 +120,22 @@ export default function Navigation() {
                   {item.label}
                 </button>
               ))}
+              
+              {/* Mobile Contact Actions */}
+              <a
+                href="tel:+16047047972"
+                className="flex items-center gap-2 w-full px-3 py-2 text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50 rounded-md transition-colors"
+              >
+                <Phone size={16} />
+                <span>(604) 704-7972</span>
+              </a>
+              
+              <button
+                onClick={downloadVCard}
+                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50 rounded-md transition-colors"
+              >
+                Download Contact Card
+              </button>
             </div>
           </div>
         )}
