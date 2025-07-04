@@ -41,9 +41,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl sm:text-2xl lg:text-3xl font-light mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed"
+          className="text-xl sm:text-2xl lg:text-3xl font-normal mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed"
         >
-          I don't just build portfolios. I build legacies that change the world.
+          Driven By Purpose. Built On Trust.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
