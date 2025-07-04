@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -27,9 +27,6 @@ export default function Footer() {
               <a href="https://www.linkedin.com/in/jayan-jayabal-20495b155/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
               <a href="mailto:jayan@wealthxfinancial.com" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
@@ -42,15 +39,10 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        <div className="border-t border-gray-700 pt-8 flex justify-center items-center text-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © 2025 Jayan Jayabal. All rights reserved.
           </p>
-          <div className="flex space-x-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-[#0f2e35] transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[#0f2e35] transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-[#0f2e35] transition-colors">Cookie Policy</a>
-          </div>
         </div>
       </div>
     </footer>
