@@ -17,6 +17,9 @@ export default function AboutSection() {
         
         <div className="prose prose-lg prose-gray max-w-none">
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            I am an Entrepreneur & Wealth Advisor empowering individuals and businesses to build enduring wealth and create transformative impact.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
             My approach to wealth management began with a simple realization: true success isn't measured solely in dollars. It's measured in the lives we transform.
           </p>
           
@@ -48,7 +51,7 @@ export default function AboutSection() {
           </motion.blockquote>
           
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            I founded WealthX Financial Solutions with a clear mission: to revolutionize wealth management through integrity, innovation, and genuine client partnership. As Chief Strategy Officer at Westgroup Financial Management, I help clients navigate financial complexity to achieve their goals with clarity and confidence.
+            I founded WealthX Financial Solutions with a clear mission: to revolutionize wealth management through integrity, innovation, and genuine client partnership.
           </p>
           
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
