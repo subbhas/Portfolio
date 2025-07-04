@@ -5,6 +5,7 @@ import wealthxLogo from "@assets/Screenshot 2025-07-02 at 17.46.02_1751503635779
 import pier7Logo from "@assets/Pier7-Mortgage-Architect_1751503635779.png";
 import jlFamilyLogo from "@assets/jlfamily-logo_1751503635778.svg";
 import digitalGridBg from "@assets/gradient-navy-blue-digital-grid-wallpaper_1751503999120.jpg";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ventures = [
   {
@@ -15,7 +16,7 @@ const ventures = [
   },
   {
     title: "Pier7 Mortgages", 
-    description: "Innovative mortgage solutions for homeowners and businesses. Whether you're refinancing or investing in commercial property, we provide flexible, expert-backed mortgage options.",
+    description: "PIER 7 is part of our holistic financial solutions, offering innovative lending options for homeowners and businesses. Whether you're refinancing or investing in commercial property, we provide flexible, expert-backed mortgage options.",
     url: "https://pier7mortgages.com/",
     logo: pier7Logo
   },
@@ -60,12 +61,16 @@ export default function VenturesCarousel() {
         </div>
         
         <div className="relative overflow-hidden">
-          <div 
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          >
-            {ventures.map((venture, index) => (
-              <div key={index} className="w-full flex-shrink-0 px-4">
+          <div className="flex justify-center">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentSlide}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="w-full flex-shrink-0 px-4"
+              >
                 <div className="max-w-md mx-auto">
                   <Card className="bg-white shadow-lg border border-gray-200 aspect-square">
                     <CardContent className="p-8 h-full flex flex-col justify-center">
@@ -73,25 +78,25 @@ export default function VenturesCarousel() {
                         {/* Company Logo */}
                         <div className="mb-8 flex justify-center items-center min-h-[80px]">
                           <img 
-                            src={venture.logo} 
-                            alt={`${venture.title} logo`}
+                            src={ventures[currentSlide].logo} 
+                            alt={`${ventures[currentSlide].title} logo`}
                             className={`max-h-20 w-auto max-w-[240px] object-contain ${
-                              venture.title === "Pier7 Mortgages" ? "filter brightness-0" : ""
+                              ventures[currentSlide].title === "Pier7 Mortgages" ? "filter brightness-0" : ""
                             } ${
-                              venture.title === "WealthX Financial Solutions" ? "object-right" : ""
+                              ventures[currentSlide].title === "WealthX Financial Solutions" ? "object-right" : ""
                             } ${
-                              venture.title === "Just Like Family" ? "rounded-lg" : ""
+                              ventures[currentSlide].title === "Just Like Family" ? "rounded-lg" : ""
                             }`}
                             style={{
-                              maxHeight: venture.title === "Just Like Family" ? "60px" : "80px"
+                              maxHeight: ventures[currentSlide].title === "Just Like Family" ? "60px" : "80px"
                             }}
                           />
                         </div>
                         <p className="text-gray-600 mb-6 leading-relaxed text-sm">
-                          {venture.description}
+                          {ventures[currentSlide].description}
                         </p>
                         <a
-                          href={venture.url}
+                          href={ventures[currentSlide].url}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 font-medium transition-colors"
@@ -104,8 +109,8 @@ export default function VenturesCarousel() {
                     </CardContent>
                   </Card>
                 </div>
-              </div>
-            ))}
+              </motion.div>
+            </AnimatePresence>
           </div>
           
           {/* Indicators */}
