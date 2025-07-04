@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="md:col-span-4">
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4 mb-4">
-              <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
+              <a href="https://www.linkedin.com/in/jayan-jayabal-20495b155/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-[#0f2e35] rounded-full flex items-center justify-center transition-colors">
