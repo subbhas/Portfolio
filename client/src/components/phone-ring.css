@@ -1,0 +1,73 @@
+@keyframes phone-ring {
+  0% { transform: rotate(0deg) scale(1); }
+  10% { transform: rotate(-8deg) scale(1.08); }
+  20% { transform: rotate(8deg) scale(1.12); }
+  30% { transform: rotate(-6deg) scale(1.08); }
+  40% { transform: rotate(6deg) scale(1.10); }
+  50% { transform: rotate(-4deg) scale(1.06); }
+  60% { transform: rotate(4deg) scale(1.08); }
+  70% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+.animate-phone-ring {
+  position: relative;
+  display: inline-block;
+}
+
+.animate-phone-ring::before,
+.animate-phone-ring::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  background: rgba(34,197,94,0.18); /* greenish pulse */
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.animate-phone-ring::before {
+  animation: phone-pulse 1.4s cubic-bezier(0.4, 0.2, 0.2, 1) infinite;
+}
+
+.animate-phone-ring::after {
+  animation: phone-pulse 1.4s cubic-bezier(0.4, 0.2, 0.2, 1) infinite 0.7s;
+}
+
+@keyframes phone-pulse {
+  0% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  60% {
+    opacity: 0.2;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+.animate-phone-ring svg,
+.animate-phone-ring .lucide {
+  position: relative;
+  z-index: 1;
+  animation: phone-icon-scale 1.4s cubic-bezier(0.4, 0.2, 0.2, 1) infinite;
+}
+
+@keyframes phone-icon-scale {
+  0% { transform: scale(1); }
+  10% { transform: scale(1.08); }
+  20% { transform: scale(1.12); }
+  30% { transform: scale(1.08); }
+  40% { transform: scale(1.10); }
+  50% { transform: scale(1.06); }
+  60% { transform: scale(1.08); }
+  70% { transform: scale(1); }
+  100% { transform: scale(1); }
+} 

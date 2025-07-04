@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import './phone-ring.css';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -91,7 +92,7 @@ END:VCARD`;
                   : "text-gray-200 hover:text-white"
               }`}
             >
-              <Phone size={16} />
+              <span className="animate-phone-ring"><Phone size={16} /></span>
               <span className="font-medium">(604) 704-7972</span>
             </a>
           </div>
@@ -138,7 +139,7 @@ END:VCARD`;
                     : "text-gray-700 hover:text-white hover:bg-gray-800"
                 }`}
               >
-                <Phone size={16} />
+                <span className="animate-phone-ring"><Phone size={16} /></span>
                 <span>(604) 704-7972</span>
               </a>
               

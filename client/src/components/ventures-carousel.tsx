@@ -23,7 +23,7 @@ const ventures = [
   {
     title: "Just Like Family",
     description: "With franchises in North Vancouver and Victoria, we provide compassionate, customized home care. From post-hospital support to dementia care — prioritizing dignity and quality of life.",
-    url: "https://justlikefamily.ca/",
+    url: "https://justlikefamily.ca/vancouver/",
     logo: jlFamilyLogo
   }
 ];
