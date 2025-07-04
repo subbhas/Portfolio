@@ -33,8 +33,8 @@ export default function Navigation() {
 VERSION:3.0
 FN:Jayan Jayabal
 ORG:WealthX Financial Solutions
-TITLE:Wealth Management Expert
-TEL:+16047047972
+TITLE:Entrepreneur & Wealth Advisor
+TEL:+1 (604) 704-7972
 EMAIL:jayan@wealthxfinancial.com
 ADR:;;142 Esplanade East;North Vancouver;BC;V7L 4X9;Canada
 URL:https://www.wealthxfinancial.com

@@ -77,8 +77,9 @@ export default function ContactSection() {
 VERSION:3.0
 FN:Jayan Jayabal
 ORG:WealthX Financial Solutions
-EMAIL:jayan@jayanjayabal.com
-TEL:+1-604-555-0123
+TITLE:Entrepreneur
+ADR:;;142 Esplanade East;North Vancouver;BC;V7L 4X9;Canada
+TEL:+1 (604) 704-7972
 END:VCARD`;
       
       const qrUrl = await generateQRCode(contactData);

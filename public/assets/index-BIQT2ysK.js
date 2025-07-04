@@ -143,7 +143,6 @@ ADR:;;142 Esplanade East;North Vancouver;BC;V7L 4X9;Canada
 TEL:+1-604-555-0123
 EMAIL:jayan@jayanjayabal.com
 URL:https://jayanjayabal.com
-NOTE:Wealth Management & Venture Capital Expert
 END:VCARD`,t=new Blob([e],{type:"text/vcard"}),n=window.URL.createObjectURL(t),r=document.createElement("a");r.href=n,r.download="jayan-jayabal.vcf",document.body.appendChild(r),r.click(),document.body.removeChild(r),window.URL.revokeObjectURL(n)}const xO=Rs.object({name:Rs.string().min(2,"Name must be at least 2 characters"),email:Rs.string().email("Invalid email address"),phone:Rs.string().optional(),city:Rs.string().optional(),message:Rs.string().min(10,"Message must be at least 10 characters")});function wO(){const[e,t]=w.useState(""),{toast:n}=Mx(),r=eM({resolver:sM(xO),defaultValues:{name:"",email:"",phone:"",city:"",message:""}}),s=DT({mutationFn:async l=>LT("POST","/api/contact",l),onSuccess:()=>{n({title:"Message sent successfully!",description:"Thank you for your message. I will get back to you soon."}),r.reset()},onError:()=>{n({title:"Error sending message",description:"Please try again later.",variant:"destructive"})}}),i=l=>{s.mutate(l)},o=()=>{vO(),n({title:"vCard downloaded",description:"Contact information saved to your device."})},a=async()=>{try{const u=await gO(`BEGIN:VCARD
 VERSION:3.0
 FN:Jayan Jayabal
