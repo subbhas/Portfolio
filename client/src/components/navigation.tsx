@@ -33,12 +33,11 @@ export default function Navigation() {
     const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:Jayan Jayabal
-ORG:WealthX Financial Solutions
 TITLE:Entrepreneur & Wealth Advisor
-TEL:+1 (604) 704-7972
-EMAIL:jayan@wealthxfinancial.com
-ADR:;;142 Esplanade East;North Vancouver;BC;V7L 4X9;Canada
-URL:https://www.wealthxfinancial.com
+TEL;TYPE=WORK,VOICE:+1-604-704-7972
+URL:https://jayanjayabal.ca
+item1.URL:https://linkedin.com/in/jayan-jayabal
+item1.X-ABLabel:LinkedIn
 END:VCARD`;
 
     const blob = new Blob([vCardData], { type: 'text/vcard' });

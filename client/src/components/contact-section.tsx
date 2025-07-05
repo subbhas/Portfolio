@@ -76,10 +76,11 @@ export default function ContactSection() {
       const contactData = `BEGIN:VCARD
 VERSION:3.0
 FN:Jayan Jayabal
-ORG:WealthX Financial Solutions
-TITLE:Entrepreneur
-ADR:;;142 Esplanade East;North Vancouver;BC;V7L 4X9;Canada
-TEL:+1 (604) 704-7972
+TITLE:Entrepreneur & Wealth Advisor
+TEL;TYPE=WORK,VOICE:+1-604-704-7972
+URL:https://jayanjayabal.ca
+item1.URL:https://www.linkedin.com/in/jayan-jayabal-20495b155/
+item1.X-ABLabel:LinkedIn
 END:VCARD`;
       
       const qrUrl = await generateQRCode(contactData);
