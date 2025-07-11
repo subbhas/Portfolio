@@ -58,7 +58,7 @@ END:VCARD`;
         <div className="flex justify-between items-center py-4">
           <div className={`text-2xl font-bold transition-colors ${
             isScrolled ? "text-gray-900" : "text-white"
-          }`}>
+          } absolute top-4 left-4 md:static md:top-auto md:left-auto`}>
             Jayan Jayabal
           </div>
           

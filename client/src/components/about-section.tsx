@@ -46,7 +46,7 @@ export default function AboutSection() {
             >
               “
             </motion.span>
-            <span className="block text-2xl sm:text-3xl font-light text-blue-900">
+            <span className="block text-2xl sm:text-3xl font-light" style={{ color: '#507368' }}>
               This is wealth management reimagined. This is impact investing realized.<br />This is the future of generational wealth.
             </span>
           </motion.blockquote>
