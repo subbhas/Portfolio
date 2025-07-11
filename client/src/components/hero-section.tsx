@@ -52,7 +52,7 @@ export default function HeroSection() {
         >
           <Button 
             onClick={scrollToContact}
-            className="btn-primary text-lg px-8 py-4"
+            className="btn-primary text-lg px-8 py-4 transition-transform duration-200 hover:scale-105 hover:shadow-2xl"
           >
             Schedule A Consultation
           </Button>
