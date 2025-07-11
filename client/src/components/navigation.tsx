@@ -59,7 +59,7 @@ END:VCARD`;
           <div className={`text-2xl font-bold transition-colors ${
             isScrolled ? "text-gray-900" : "text-white"
           }`}>
-            JJ
+            Jayan Jayabal
           </div>
           
           {/* Desktop Menu */}
