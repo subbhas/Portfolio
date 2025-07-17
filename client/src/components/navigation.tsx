@@ -81,19 +81,6 @@ END:VCARD`;
                 {item.label}
               </button>
             ))}
-            
-            {/* Phone Number */}
-            <a
-              href="tel:+16047047972"
-              className={`flex items-center gap-2 transition-colors ${
-                isScrolled
-                  ? "text-gray-700 hover:text-[#0f2e35]"
-                  : "text-gray-200 hover:text-white"
-              }`}
-            >
-              <span className="animate-phone-ring"><Phone size={16} /></span>
-              <span className="font-medium">(604) 704-7972</span>
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -128,30 +115,6 @@ END:VCARD`;
                   {item.label}
                 </button>
               ))}
-              
-              {/* Mobile Contact Actions */}
-              <a
-                href="tel:+16047047972"
-                className={`flex items-center gap-2 w-full px-3 py-2 transition-colors rounded-md ${
-                  isScrolled
-                    ? "text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50"
-                    : "text-gray-700 hover:text-white hover:bg-gray-800"
-                }`}
-              >
-                <span className="animate-phone-ring"><Phone size={16} /></span>
-                <span>(604) 704-7972</span>
-              </a>
-              
-              <button
-                onClick={downloadVCard}
-                className={`block w-full text-left px-3 py-2 transition-colors rounded-md ${
-                  isScrolled
-                    ? "text-gray-700 hover:text-[#0f2e35] hover:bg-gray-50"
-                    : "text-gray-700 hover:text-white hover:bg-gray-800"
-                }`}
-              >
-                Download Contact Card
-              </button>
             </div>
           </div>
         )}

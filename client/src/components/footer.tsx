@@ -34,7 +34,6 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               142 Esplanade East<br />
               North Vancouver, BC V7L 4X9<br />
-              <a href="tel:+16047047972" className="hover:text-[#0f2e35] transition-colors">(604) 704-7972</a>
             </p>
           </div>
         </div>

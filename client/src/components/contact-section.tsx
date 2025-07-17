@@ -155,25 +155,6 @@ END:VCARD`;
                   <div className="grid md:grid-cols-2 gap-4">
                     <FormField
                       control={form.control}
-                      name="phone"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Phone</FormLabel>
-                          <FormControl>
-                            <Input 
-                              type="tel"
-                              placeholder="(604) 555-0123"
-                              className="bg-gray-100 border-0 focus:bg-white focus:ring-2"
-                              style={{ '--tw-ring-color': '#0f2e35' } as any}
-                              {...field} 
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
                       name="city"
                       render={({ field }) => (
                         <FormItem>
@@ -238,13 +219,6 @@ END:VCARD`;
                         142 Esplanade East<br />
                         North Vancouver, BC V7L 4X9
                       </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <Phone className="mr-3 w-5 h-5" style={{ color: '#0f2e35' }} />
-                    <div>
-                      <p className="text-gray-900 font-medium">Phone</p>
-                      <a href="tel:+16047047972" className="text-gray-600 hover:text-[#0f2e35] transition-colors">(604) 704-7972</a>
                     </div>
                   </div>
                   <div className="flex items-center">
